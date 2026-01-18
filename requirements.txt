@@ -1,0 +1,4 @@
+google-cloud-documentai
+pandas
+openpyxl
+reportlab
