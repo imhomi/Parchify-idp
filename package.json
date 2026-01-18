@@ -1,0 +1,16 @@
+{
+  "name": "parchify-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run start:all",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm start",
+    "start:all": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "install:all": "cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
